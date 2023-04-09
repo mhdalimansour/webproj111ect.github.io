@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>University Schedule</title>
+  <link rel="stylesheet" href="schedule2.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="lulogo-removebg-preview.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="showbutton.js" defer></script>
+  <script src="darkmode.js" defer></script>
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <button class="button1" id="dark-mode-toggle" class="dark-mode-toggle">
+      <span class="button_top">
+        <span id="mode-change">DARK MODE</span>
+      </span>
+    </button>
+
+    <a href="index.html" class="nav-space"><img src="lulogo-removebg-preview.png" alt="lol" class="img-nav"></a>
+    <a href="mansour.html" class="first-link">Home</a>
+    <a href="nour.html">Marks</a>
+    <a href="htmlFS/farah.html">Lectures</a>
+    <a href="#">Schedule</a>
+    <a href="underconstruction.html">Account</a>
+  </nav>
+  <header>
+    <h1>Semester Four Schedule</h1>
+  </header>
+  <main>
+    <p>Click the button below to see your schedule:</p>
+    <button class="button2" onclick="toggleSchedule()">Show Schedule</button>
+
+    <table id="schedule-table" border="1">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8:00 - 9:30</td>
+          <td> <b>I2201</b> <br> <br><i>Dr A. Safadi</i> </td>
+          <td></td>
+          <td><b>I2204</b><br> <br><i>Dr Z. Ibrahim</i></td>
+          <td></td>
+          <td><b>I2205</b><br> <br><i>Dr Z. Ibrahim</i></td>
+        </tr>
+        <tr>
+          <td>9:45 - 11:15</td>
+          <td><b>S2201</b><br> <br><i>Dr Z. Saghir</i></td>
+          <td><b>I2202</b><br> <br><i>Dr H. Hijazi</i></td>
+          <td><b>M2231</b><br> <br><i>Dr N. Ali</i></td>
+          <td><b>I2204</b><br> <br><i>Dr Z. Ibrahim</i></td>
+          <td><b>S2201</b><br> <br><i>Dr Z. Saghir</i></td>
+        </tr>
+        <tr>
+          <td>11:30 - 1:00</td>
+          <td><b>I2205</b><br> <br><i>Dr Z. Ibrahim</i></td>
+          <td></td>
+          <td><b>I2203</b><br> <br><i>Dr A. Faour</i></td>
+          <td></td>
+          <td><b>I2202</b><br> <br><i>Dr H. Hijazi</i></td>
+        </tr>
+        <tr>
+          <td>1:15 - 2:45</td>
+          <td></td>
+          <td><b>I2203</b><br> <br><i>Dr A. Faour</i></td>
+          <td></td>
+          <td><b>I2201</b><br> <br><i>Dr A. Safadi</i></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer class="footer">
+
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a href="mailto:mft60247@gmail.com" class="email-link">lu56574@gmail.com</a> </li>
+
+    </ul>
+    <p>&copy;2023 | All Rights Reserved</p>
+  </footer>
+
+</body>
+
+</html>

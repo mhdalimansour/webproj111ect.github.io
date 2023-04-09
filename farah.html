@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectures</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="lulogo-removebg-preview.png">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style3.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="darkmode.js" defer></script>
+    <script src="farah.js" defer></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <button 
+      id="dark-mode-toggle" 
+      class="dark-mode-toggle"
+      >
+      <span class="button_top">
+        <span id="mode-change">DARK MODE</span>
+      </span>
+    </button>
+
+    <a href="index.html" class="nav-space"><img src="lulogo-removebg-preview.png" alt="lol" class="img-nav"></a>
+    <a href="mansour.html" class="first-link">Home</a>
+    <a href="nour.html">Marks</a>
+    <a href="#">Lectures</a>
+    <a href="schedule2.html">Schedule</a>
+    <a href="underconstruction.html">Account</a>
+  </nav>
+  
+
+    <main>
+        <section class="heading-link">
+            <h3>Semester Four courses</h3>
+        </section>
+
+
+        <div id="filterButtons" class="button-center">
+
+            <button class="button-value active" onclick="filterCourses('all')">All</button>
+            <button class="button-value" onclick="filterCourses('mandatory')">Mandatory</button>
+            <button class="button-value" onclick="filterCourses('optional')">Optional</button>
+        </div>
+
+
+        <section class="courses">
+
+
+
+            <div class="box-container">
+
+                <div class="box" data-type="mandatory">
+
+
+                    <div class="card">
+
+                        <div class="card__face card__face--front">
+
+
+                            <div class="image">
+                                <img src="datastructure3.jpg" alt="">
+
+
+                                <h3>Data structures</h3>
+                            </div>
+                        </div>
+
+                        <div class="card__face card__face--back">
+                            <h2 class="caption"> For more information :</h2>
+
+                            <button id="pdf" onclick="openPdf()">Open PDF</button>
+
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <h3>Objective of the course</h3>
+                        <p>A data structure can reduce the space and time complexities of different tasks.
+                            <br>
+                        </p>
+                        <a href="#" class="btn" value="Open Window" onclick="openWin1()">preview</a>
+                        <div class="icons">
+                            <span> <i class="fas fa-book"></i> I2206 </span>
+                            <span> <i class="fas fa-solid fa-database"></i> 5 credits </span>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="box" data-type="mandatory">
+
+
+                    <div class="card">
+
+                        <div class="card__face card__face--front">
+
+
+                            <div class="image">
+                                <img src="computerarchitecture.jpg" alt="">
+                                <h3>Computer Architecture</h3>
+                            </div>
+
+                        </div>
+
+
+                        <div class="card__face card__face--back">
+                            <h2 class="caption"> For more information :</h2>
+
+                            <button id="pdf" onclick="openPdf()">Open PDF</button>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <div class="content">
+                        <h3>Objective of the course</h3>
+                        <p>Describes the structure of a computer system made from component parts.</p>
+                        <a href="#" class="btn" value="Open Window" onclick="openWin2()">preview</a>
+
+
+                        <div class="icons">
+                            <span> <i class="fas fa-book"></i> I2207 </span>
+                            <span> <i class="fas fa-solid fa-database"></i></i> 4 credits </span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="box" data-type="mandatory">
+
+                    <div class="card">
+
+                        <div class="card__face card__face--front">
+
+                            <div class="image">
+                                <img src="computernetwork.jpg" alt="">
+                                <h3>Computer Network 1</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <h2 class="caption"> For more information :</h2>
+
+                            <button id="pdf" onclick="openPdf()">Open PDF</button>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Objective of the course</h3>
+                        <p>connecting computing devices for transmitting and sharing informations.</p>
+                        <a href="#" class="btn" value="Open Window" onclick="openWin3()">preview</a>
+                        <div class="icons">
+                            <span> <i class="fas fa-book"></i> I2208 </span>
+                            <span> <i class="fas fa-solid fa-database"></i></i> 4 credits </span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="box" data-type="mandatory">
+                    <div class="card">
+
+                        <div class="card__face card__face--front">
+                            <div class="image">
+                                <img src="logicalprogramming.jpg" alt="">
+                                <h3>Logical Programming</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <h2 class="caption"> For more information :</h2>
+
+                            <button id="pdf" onclick="openPdf()">Open PDF</button>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Objective of the course</h3>
+                        <p> take the form of sets of sentences in the language of Symbolic Logic.</p>
+                        <a href="#" class="btn" value="Open Window" onclick="openWin4()">preview</a>
+                        <div class="icons">
+                            <span> <i class="fas fa-book"></i> I2209 </span>
+                            <span> <i class="fas fa-solid fa-database"></i></i> 4 credits </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="box" data-type="mandatory">
+                    <div class="card">
+
+                        <div class="card__face card__face--front">
+                            <div class="image">
+                                <img src="database.jpg" alt="">
+                                <h3>DataBase 1</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <h2 class="caption"> For more information :</h2>
+
+                            <button id="pdf" onclick="openPdf()">Open PDF</button>
+
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <h3>Objective of the course</h3>
+                        <p>is an organized collection of data stored and accessed electronically.</p>
+                        <a href="#" class="btn" value="Open Window" onclick="openWin5()">preview</a>
+                        <div class="icons">
+                            <span> <i class="fas fa-book"></i> I2210 </span>
+                            <span> <i class="fas fa-solid fa-database"></i></i> 5 credits </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="box" data-type="mandatory">
+                    <div class="card">
+
+                        <div class="card__face card__face--front">
+                            <div class="image">
+                                <img src="java2.jpg" alt="">
+                                <h3>Java</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <h2 class="caption"> For more information :</h2>
+
+                            <button id="pdf" onclick="openPdf()">Open PDF</button>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Objective of the course</h3>
+                        <p> Popular programming language that is used for: Mobile applications.</p>
+                        <a href="#" class="btn" value="Open Window" onclick="openWin6()">preview</a>
+                        <div class="icons">
+                            <span> <i class="fas fa-book"></i> I2211 </span>
+                            <span> <i class="fas fa-solid fa-database"></i></i> 5 credits </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="box hide" id="myDIV" data-type="optional">
+                    <div class="card">
+
+                        <div class="card__face card__face--front">
+                            <div class="image">
+                                <img src="imageprocessing.jpg" alt="">
+                                <h3>Image Processing(optional)</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <h2 class="caption"> For more information :</h2>
+
+                            <button id="pdf" onclick="openPdf()">Open PDF</button>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Objective of the course</h3>
+                        <p>A way to convert an image to a digital aspect and perform certain functions on it. </p>
+                        <a href="#" class="btn" value="Open Window" onclick="openWin7()">preview</a>
+                        <div class="icons">
+                            <span> <i class="fas fa-book"></i> I2234 </span>
+                            <span> <i class="fas fa-solid fa-database"></i></i> 3 credits </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="box hide" id="myDIV2" data-type="optional">
+                    <div class="card">
+
+                        <div class="card__face card__face--front">
+                            <div class="image">
+                                <img src="infographics.jpg" alt="">
+                                <h3>InfoGraphics(optional)</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <h2 class="caption"> For more information :</h2>
+
+                            <button id="pdf" onclick="openPdf()">Open PDF</button>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Objective of the course</h3>
+                        <p>is a collection of imagery, data visualizations like pie charts and bar graphs. </p>
+                        <a href="#" class="btn" value="Open Window" onclick="openWin8()">preview</a>
+                        <div class="icons">
+                            <span> <i class="fas fa-book"></i> I2233 </span>
+                            <span> <i class="fas fa-solid fa-database"></i></i> 3 credits </span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="box hide" id="myDIV3" data-type="optional">
+                    <div class="card">
+
+                        <div class="card__face card__face--front">
+                            <div class="image">
+                                <img src="python.jpg" alt="">
+                                <h3>Python(optional)</h3>
+                            </div>
+                        </div>
+                        <div class="card__face card__face--back">
+                            <h2 class="caption"> For more information :</h2>
+
+                            <button id="pdf" onclick="openPdf()">Open PDF</button>
+
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Objective of the course</h3>
+                        <p>is a high-level, interpreted, interactive and object-oriented scripting language. </p>
+                        <a href="#" class="btn" value="Open Window" onclick="openWin8()">preview</a>
+                        <div class="icons">
+                            <span> <i class="fas fa-book"></i> I2236 </span>
+                            <span> <i class="fas fa-solid fa-database"></i></i> 3 credits </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="load-more">
+
+                <div class="btn" onclick="loadmore()" id="loadmore">load more</div>
+
+
+            </div>
+
+
+        </section>
+
+    </main>
+    <footer class="footer">
+      
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+        <li class="menu__item"><a href="mailto:mft60247@gmail.com" class="email-link">lu56574@gmail.com</a> </li>
+  
+      </ul>
+      <p>&copy;2023  | All Rights Reserved</p>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
